@@ -36,6 +36,7 @@ const App = () => {
     <div className='container'>
       <h1>{isLoading ? 'Loading...' : isError ? 'Error...' : 'Our Tours'}</h1>
       <span className='underline'></span>
+      test for netlify
       <div className='tours-container'>
         {data.length > 0 ? (
           data.map(elem => {
