@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f5f8;
+  padding: 2.5rem;
+}
+
+.container {
+  width: 40rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.tours-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.item-container {
+  background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.info-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.name-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name,
+.price {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+}
+
+.price {
+  background-color: rgba(114, 248, 102, 0.3);
+  color: #0db115;
+  border-radius: 5px;
+  padding: 2px 10px;
+}
+
+h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+
+.underline {
+  height: 0.25rem;
+  width: 6rem;
+  background-color: #0db115;
+  margin: 0.75rem auto 0 auto;
+}
+
+.info,
+.read-button {
+  letter-spacing: 0.05rem;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+  color: #617c98;
+}
+
+button {
+  cursor: pointer;
+}
+
+.read-button {
+  border: none;
+  background-color: transparent;
+  color: #48a6e8;
+  text-transform: capitalize;
+}
+
+.not-interested-button {
+  font-size: 1rem;
+  color: #bb2524;
+  background: none;
+  border: 1px solid #bb2524;
+  border-radius: 5px;
+  text-transform: capitalize;
+  padding: 3px 30px;
+  transition-duration: 0.25s;
+  &:hover {
+    background-color: #bb2524;
+    color: #ffffff;
+  }
+}
+
+.refresh-button {
+  font-size: 1.3rem;
+  color: #0db115;
+  background: none;
+  border: 1px solid #0db115;
+  border-radius: 5px;
+  text-transform: capitalize;
+  padding: 3px 30px;
+  transition-duration: 0.25s;
+  &:hover {
+    background-color: #0db115;
+    color: #ffffff;
+  }
+}
+
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 20rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
