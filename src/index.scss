@@ -144,3 +144,11 @@ img {
     height: 45vw;
   }
 }
+
+@media screen and (max-width: 655px) {
+  .name-price {
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1rem;
+  }
+}

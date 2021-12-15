@@ -43,10 +43,12 @@ const App = () => {
             // return <Tour key={id} image={image} info={info} name={name} price={price} />;
             return <Tour key={elem.id} data={elem} deleteItem={() => deleteItem(elem.id)} />;
           })
-        ) : (
+        ) : !isLoading ? (
           <button className='refresh-button' onClick={() => setData(originalData)}>
             refresh
           </button>
+        ) : (
+          ''
         )}
       </div>
     </div>
